@@ -8,3 +8,8 @@
 ```
 go run .\portScan.go -domain="IP地址"
 ```
+
+* 不同系统的运行包已打
+> windows amd64架构
+> ```go
+> ./port_windows_amd64.exe -domain="IP地址"```
