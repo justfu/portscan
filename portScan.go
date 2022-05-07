@@ -33,7 +33,7 @@ func main() {
 	resChan := make(chan int, 100)
 
 	go func() {
-		for i := 0; i < 65535; i++ {
+		for i := 1; i < 65536; i++ {
 			portChan <- i
 		}
 		close(portChan) //及时关闭管道 使用for循环取出时才不会等待
